@@ -1,0 +1,8 @@
+<p>Category List</p>
+<ul>
+<% Category.all.each do |category| %>
+  <li><%=category.name%></li>
+<% end %>
+</ul>
+
+<%= link_to '+ New Category', [:new, :admin, :category] %>
